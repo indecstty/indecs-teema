@@ -49,6 +49,7 @@ bottom: 0;
   :last-child {
     display: inline-block;
     // Paska tapa
-    margin-right: 100%;
+    float: left;
+    clear: left;
   }
 }
