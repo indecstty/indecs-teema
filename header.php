@@ -20,11 +20,10 @@
 	<div id="site-wrapper">
 		<header id="site-header" role="banner">
 
-			<!-- Branding -->
-			<div id="header-titles">
-				<?php indecsteema_site_logo();
-				indecsteema_site_description(); ?>
-			</div>
+<!--			<div id="header-titles">-->
+<!--				--><?php //indecsteema_site_logo();
+//				indecsteema_site_description(); ?>
+<!--			</div>-->
 
 			<!-- Navigation -->
 			<div class="navigation-wrapper">

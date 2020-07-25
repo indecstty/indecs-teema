@@ -36,7 +36,7 @@ function indecsteema_setup() {
 
 	// Add custom logo
 	$logo_width = 120;
-	$logo_height = 90;
+	$logo_height = 120;
 	add_theme_support('custom-logo',
 		array(
 			'height' => $logo_height,

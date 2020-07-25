@@ -1,6 +1,9 @@
+$dark:   rgb(22,22,22);
+$light: rgb(255,255,255);
+
 #site-wrapper {
   min-height: 100vh;
-  background: lightblue;
+  background: $light;
 
   display: -ms-grid;
   display: grid;
@@ -8,22 +11,26 @@
   "header"
   "content"
   "footer";
+  grid-template-rows: auto 1fr auto;
 }
 
 #site-header {
-  border: 1px solid blue;
+  background-color: $light;
+  color: $dark;
+  grid-area: header;
   position: sticky;
   top: 0;
 }
 
 #site-content {
-  border: 1px solid black;
+  grid-area: content;
 }
 
 #site-footer {
-  border: 1px solid salmon;
-  position: sticky;
-bottom: 0;
+  background-color: $light;
+  color: $dark;
+  grid-area: footer;
+  border-top: 1px solid black;
 }
 
 .skip-link {
@@ -40,13 +47,14 @@ bottom: 0;
 }
 
 #wrapper {
-  background-color: rgba(100,40,100,0.5);
   width: 800px;
   height: 100%;
   margin: 0 auto;
 
-  :first-child,
-  :last-child {
+  > h1:first-child,
+  > h1:last-child,
+  > p:first-child,
+  > p:last-child {
     display: inline-block;
     // Paska tapa
     float: left;

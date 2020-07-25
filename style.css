@@ -351,26 +351,30 @@ template {
 
 #site-wrapper {
   min-height: 100vh;
-  background: lightblue;
+  background: white;
   display: -ms-grid;
   display: grid;
   grid-template-areas: "header" "content" "footer";
+  grid-template-rows: auto 1fr auto;
 }
 
 #site-header {
-  border: 1px solid blue;
+  background-color: white;
+  color: #161616;
+  grid-area: header;
   position: sticky;
   top: 0;
 }
 
 #site-content {
-  border: 1px solid black;
+  grid-area: content;
 }
 
 #site-footer {
-  border: 1px solid salmon;
-  position: sticky;
-  bottom: 0;
+  background-color: white;
+  color: #161616;
+  grid-area: footer;
+  border-top: 1px solid black;
 }
 
 .skip-link {
@@ -387,25 +391,21 @@ template {
 }
 
 #wrapper {
-  background-color: rgba(100, 40, 100, 0.5);
   width: 800px;
   height: 100%;
   margin: 0 auto;
 }
-#wrapper :first-child,
-#wrapper :last-child {
+#wrapper > h1:first-child,
+#wrapper > h1:last-child,
+#wrapper > p:first-child,
+#wrapper > p:last-child {
   display: inline-block;
   float: left;
   clear: left;
 }
 
-#navigation-portal {
-  background: antiquewhite;
-}
-
 #navigation-primary {
-  border: 1px solid gray;
-  height: 3em;
+  height: 6em;
 }
 #navigation-primary * {
   margin: 0;
@@ -415,6 +415,16 @@ template {
 }
 #navigation-primary ul {
   list-style: none;
+}
+
+#nav-logo {
+  line-height: 1em;
+  width: 198px;
+  height: 198px;
+}
+#nav-logo img {
+  width: 198px;
+  height: 198px;
 }
 
 .menu-icons {
@@ -433,7 +443,7 @@ template {
   display: flex;
 }
 .nav-list li {
-  line-height: 3em;
+  line-height: 6em;
   position: relative;
 }
 .nav-list li:hover > .sub-menu {
@@ -441,7 +451,7 @@ template {
 }
 .nav-list a {
   display: block;
-  color: ghostwhite;
+  color: #161616;
   padding: 0 1em;
   transition: color 200ms;
 }
@@ -450,6 +460,7 @@ template {
 }
 
 .sub-menu {
+  background-color: white;
   width: 10em;
   display: block;
   position: absolute;
@@ -463,6 +474,36 @@ template {
 }
 .sub-menu li {
   line-height: 2em;
+}
+
+#navigation-portal {
+  width: 100%;
+  background: antiquewhite;
+  display: flex;
+  flex-direction: row;
+}
+
+.portal-single {
+  font-size: 1.5em;
+  border: 1px solid black;
+  height: 200px;
+  flex-grow: 1;
+  flex-basis: 0;
+  display: block;
+  background: red;
+  text-align: center;
+}
+
+.one {
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+}
+
+.two {
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+}
+
+.three {
+  background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
 }
 
 body {

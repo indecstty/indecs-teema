@@ -10,8 +10,8 @@
 		<i class="icon ion-md-close"></i>
 	</div>
 	<ul class="nav-list">
-		<li>
-			<a href="#">sdfasf</a>
+		<li id="nav-logo">
+			<?php indecsteema_site_logo(); ?>
 		</li>
 		<li>
 			<a href="#">sdfasf</a>
