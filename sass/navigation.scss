@@ -5,6 +5,7 @@ $height: 6em;
 
 #navigation-primary {
   height: $height;
+  border-bottom: 1px solid black;
 
   * {
     margin: 0;
@@ -23,6 +24,7 @@ $height: 6em;
   line-height: 1em;
   width: 198px;
   height: 198px;
+  padding-right: 3em;
   img {
     width: 198px;
     height: 198px;

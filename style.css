@@ -406,6 +406,7 @@ template {
 
 #navigation-primary {
   height: 6em;
+  border-bottom: 1px solid black;
 }
 #navigation-primary * {
   margin: 0;
@@ -421,6 +422,7 @@ template {
   line-height: 1em;
   width: 198px;
   height: 198px;
+  padding-right: 3em;
 }
 #nav-logo img {
   width: 198px;
