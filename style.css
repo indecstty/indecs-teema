@@ -395,6 +395,7 @@ template {
 #wrapper :first-child,
 #wrapper :last-child {
   display: inline-block;
+  margin-right: 100%;
 }
 
 #navigation-portal {
