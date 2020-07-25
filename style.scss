@@ -1,0 +1,22 @@
+/*
+Theme Name: Indecsteema
+Author: Markus Uusitalo
+Description:  Wordpress theme for Indecs
+Version: 0.1
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+
+--------------------------------------------------------------*/
+@import "sass/normalize";
+
+@import "sass/layout";
+
+@import "sass/navigation";
+
+body {
+background-color: antiquewhite;
+}

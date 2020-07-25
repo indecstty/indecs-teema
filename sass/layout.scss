@@ -1,0 +1,52 @@
+#site-wrapper {
+  min-height: 100vh;
+  background: lightblue;
+
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas:
+  "header"
+  "content"
+  "footer";
+}
+
+#site-header {
+  border: 1px solid blue;
+  position: sticky;
+  top: 0;
+}
+
+#site-content {
+  border: 1px solid black;
+}
+
+#site-footer {
+  border: 1px solid salmon;
+  position: sticky;
+bottom: 0;
+}
+
+.skip-link {
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  margin-bottom: -1px;
+  position: absolute;
+}
+
+.skip-link:focus {
+  position: unset;
+}
+
+#wrapper {
+  background-color: rgba(100,40,100,0.5);
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+
+  :first-child,
+  :last-child {
+    display: inline-block;
+  }
+}
