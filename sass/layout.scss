@@ -1,37 +1,4 @@
-$dark:   rgb(22,22,22);
-$light: rgb(255,255,255);
-
-#site-wrapper {
-  min-height: 100vh;
-  background: $light;
-
-  display: -ms-grid;
-  display: grid;
-  grid-template-areas:
-  "header"
-  "content"
-  "footer";
-  grid-template-rows: auto 1fr auto;
-}
-
-#site-header {
-  background-color: $light;
-  color: $dark;
-  grid-area: header;
-  position: sticky;
-  top: 0;
-}
-
-#site-content {
-  grid-area: content;
-}
-
-#site-footer {
-  background-color: $light;
-  color: $dark;
-  grid-area: footer;
-  border-top: 1px solid black;
-}
+@import "variables";
 
 .skip-link {
   height: 1px;
@@ -46,18 +13,71 @@ $light: rgb(255,255,255);
   position: unset;
 }
 
-#wrapper {
-  width: 800px;
-  height: 100%;
-  margin: 0 auto;
 
-  > h1:first-child,
-  > h1:last-child,
-  > p:first-child,
-  > p:last-child {
-    display: inline-block;
-    // Paska tapa
-    float: left;
-    clear: left;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+          "header"
+          "portal"
+          "content"
+          "partners"
+          "footer";
+}
+
+.site-content {
+  grid-area: content;
+}
+
+#site-header {
+  z-index: 1;
+  grid-area: header;
+  position: sticky;
+  top: 0;
+}
+
+.portal-wrapper {
+  background-size: cover;
+  height: 70vh;
+  grid-area: portal;
+}
+
+.partners {
+  grid-area: partners;
+}
+
+#site-footer {
+  margin-top: 5rem;
+  grid-area: footer;
+  overflow: hidden;
+}
+
+main {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 5rem;
+}
+
+body.js {
+  .fade-in {
+    opacity: 0;
+
+    transform-origin: center bottom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  .fade-in.appear {
+    animation-name: fadeInUp;
   }
 }
+

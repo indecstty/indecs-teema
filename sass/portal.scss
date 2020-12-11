@@ -1,0 +1,148 @@
+@import "variables";
+
+
+.portal-wrapper {
+  color: white;
+  position: relative;
+}
+
+.portal-navigation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  ul#portal-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+    li {
+      list-style: none;
+      position: relative;
+
+      border: 1px solid rgb(200,200,200);
+      box-shadow: 0 0 3px 0 $section-border-color;
+      width: 30rem;
+      margin-right: 3rem;
+      margin-bottom: 3rem;
+
+      &:hover {
+        transform: scale(1.05);
+
+        img {
+          filter: brightness(90%) saturate(92%);
+        }
+      }
+
+      a {
+        color: white;
+
+        &:visited {
+          color: white;
+        }
+        &:active {
+          color: white;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+
+        img {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          backface-visibility: hidden;
+          filter: brightness(85%) saturate(83%);
+          transition: all 0.2s ease-out;
+        }
+      }
+    }
+  }
+}
+
+.portal-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+  h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+
+  p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 70rem) {
+
+  .portal-wrapper {
+    background: transparent !important;
+    height: auto;
+  }
+
+  .portal-navigation {
+    position: static;
+
+    ul#portal-menu {
+      flex-direction: column;
+
+      li {
+        overflow: hidden;
+        height: 200px;
+        width: 100%;
+        margin: 0 0 1rem 0;
+        border: 0;
+        box-shadow: none;
+
+        &:hover {
+          transform: scale(1);
+
+          img {
+            transform: scale(1.05);
+          }
+
+          p {
+            animation-name: tada;
+          }
+        }
+
+        &:last-of-type {
+          margin: 0;
+        }
+
+        p {
+          display: block;
+          transform-origin: center bottom;
+          animation-duration: 500ms;
+          animation-fill-mode: both;
+          animation-iteration-count: 1;
+
+          margin-top: auto;
+          margin-bottom: 2%;
+          padding: 1.5rem 2rem;
+          font-weight: 700;
+          font-size: 1.8rem;
+
+          background-color: white;
+          color: $font-color;
+
+          &:active {
+            background-color: rgba(245,245,245);
+            border-color: rgba(245,245,245);
+          }
+
+        }
+      }
+    }
+  }
+}

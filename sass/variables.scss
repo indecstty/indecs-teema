@@ -1,0 +1,42 @@
+@import "animations";
+
+$content-width: 110rem;
+
+
+
+/* Menu */
+$menu-height: 10rem;
+$menu-border-height: 0.5rem;
+$menu-logo-margin: 5rem;
+$menu-dropdown-width: 16rem;
+
+$breakpoint: ($content-width + 4 * $menu-height + 4 * $menu-logo-margin) / 1.6;
+
+/* Colors */
+$curve-red: rgb(192,31,41);
+
+// Section backgrounds
+$background-color: rgb(255,255,255);
+$menu-background-color: rgb(255,255,255);
+$footer-background-color: rgb(236,235,235);
+
+// Font colors
+$font-color: rgb(68,57,56);
+$heading-color: $font-color;
+$menu-font-color: rgb(85,85,85);
+$menu-font-hover-color: rgb(10,10,10);
+$footer-font-color: rgb(80,80,80);
+
+// Buttons
+$button-background-color: rgb(207,131,131);
+$button-hover-background-color: rgb(200,125,120);
+$button-border-color: white;
+$button-font-color: white;
+
+// Links
+$link-color: rgb(122,129,234);
+$link-active-color: rgb(242,215,12);
+$link-visited-color: $curve-red;
+
+// Section border
+$section-border-color: rgba(0,0,0,0.2);

@@ -1,117 +1,374 @@
-$dark:   rgb(22,22,22);
-$light: rgb(255,255,255);
+@import "variables";
 
-$height: 6em;
+/* Set background and borders for navbar and set it sticky */
+nav.main-navigation {
+  background-color: $menu-background-color;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid $section-border-color;
+  box-shadow: 0 0 3px 0 $section-border-color;
 
-#navigation-primary {
-  height: $height;
-  border-bottom: 1px solid black;
-
-  * {
-    margin: 0;
-  }
-
+  /* Make links blocks and remove some styling */
   a {
-    text-decoration: none;
-  }
-
-  ul {
-    list-style: none;
-  }
-}
-
-#nav-logo {
-  line-height: 1em;
-  width: 198px;
-  height: 198px;
-  padding-right: 3em;
-  img {
-    width: 198px;
-    height: 198px;
-  }
-}
-
-.menu-icons {
-  color: slategrey;
-  font-size: 2em;
-  position: absolute;
-  top: 50%;
-  right: 2em;
-  transform: translateY(-50%);
-  cursor: pointer;
-  z-index: 1500;
-  display: none;
-}
-.nav-list {
-  display: flex;
-
-  li {
-    line-height: $height;
-    position: relative;
-  }
-
-  li:hover > .sub-menu {
-    visibility: visible;
-  }
-
-  a {
+    color: $menu-font-color;
     display: block;
-    color: $dark;
-    padding: 0 1em;
-    transition: color 200ms;
+    font-size: 1.6rem;
+    text-decoration: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: $menu-font-hover-color;
+    }
   }
 
-  a:hover {
-    color: green;
+  /* Remove list styles */
+  ul {
+    background-color: inherit;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-}
 
-.sub-menu {
-  background-color: $light;
-  width: 10em;
-  display: block;
-  position: absolute;
-  border: 1px solid black;
-  visibility: hidden;
-  transition: visibility 200ms;
+  /* By default don't show hamburger toggle */
+  .menu-toggle {
+    display: none;
+  }
+
+  label[for="menu-toggle"] {
+    display: none;
+    user-select: none;
+  }
 
   .sub-menu {
-    top: 0;
-    left: 100%;
+    flex-direction: column;
+    display: none;
   }
 
+  /* Make dropdowns expand from the appropriate list element */
   li {
-    line-height: 2em;
+    position: relative;
+    background-color: inherit;
+  }
+
+  /* Arrows for dropdowns */
+  .menu-arrow {
+    height: 1.6rem;
+    width: 1.6rem;
+    fill: currentColor;
+
+    left: 0.8rem;
+    position: relative;
+    top: 0.3rem;
+  }
+
+  .menu-text-container {
+    display: flex;
+  }
+
+  .custom-logo-link {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+
+
+}
+
+@media screen and (min-width: 92rem) {
+  nav.main-navigation {
+
+    /* Align dropdown links to the left */
+    li {
+      text-align: left;
+    }
+
+    /* Style links as blocks and give them padding and min-width */
+    a {
+      box-sizing: border-box;
+      min-width: $menu-dropdown-width;
+      padding: 1.5rem 3rem 1.5rem 2.5rem;
+    }
+
+    /* Display dropdown when hovered */
+    li:hover > ul,
+    li:focus-within > ul {
+      display: flex;
+    }
+
+    /* Set mainrow to the appropriate grid area and give it a minimun height */
+    #primary-menu {
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: $menu-height;
+
+      /* Align mainrow links to the center of each element.*/
+      > li {
+        text-align: center;
+      }
+
+      /* Mainrow links have no min-width nor padding-top nor padding-bottom. Text is aligned with flexbox */
+      > li > a {
+        min-width: 0;
+        padding: 0 3rem;
+        border-top: 0.5rem solid $menu-background-color;
+        border-bottom: 0.5rem solid $menu-background-color;
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      /* Align first level dropdown with bottom of mainrow */
+      > li > ul {
+        top: 100%;
+      }
+
+      /* Top border on hover */
+      > li:hover > a,
+      > li:focus-within > a  {
+        border-top: $menu-border-height solid $curve-red;
+      }
+
+      > li:hover > a .menu-arrow,
+      li:focus-within > a .menu-arrow  {
+        transform: scaleY(-1);
+      }
+    }
+
+    /* Hide dropdowns until hovered */
+    .sub-menu {
+      position: absolute; /* Position relative to list */
+      z-index: 2;
+      border: 1px solid black;
+
+      /* Left border when not hovered */
+      li > a {
+        border-left: 0.5rem solid $menu-background-color;
+      }
+
+      /* Display sub-dropdowns to the right of the original */
+      li:hover > ul,
+      li:focus-within > ul  {
+        top: 0;
+        left: 100%;
+      }
+
+      /* Left border on hover */
+      li:hover > a,
+      li:focus-within > a  {
+        border-left: 0.5rem solid $curve-red;
+
+      }
+
+      /* Rotate arrow on hover */
+      li:hover > a .menu-arrow,
+      li:focus-within > a .menu-arrow  {
+        transform: rotate(90deg);
+      }
+
+      .menu-arrow {
+        float: right;
+        top: 0.2rem;
+        transform: rotate(-90deg);
+      }
+    }
   }
 }
 
-
-#navigation-portal {
-  width: 100%;
-  background: antiquewhite;
+nav.main-navigation {
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
-.portal-single {
-  font-size: 1.5em;
-  border: 1px solid black;
-  height: 200px;
-  flex-grow: 1;
-  flex-basis: 0;
+nav.main-navigation .custom-logo {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: $menu-height;
+  width: auto;
+  padding: 0;
+  position: static;
   display: block;
-  background: red;
-  text-align: center;
 }
 
-.one {
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+@media screen and (max-width: 92rem) {
+  nav.main-navigation {
+
+    #primary-menu {
+      background-color: rgba(255,255,255,0.9);
+
+      > li:first-of-type {
+        border-top: 1px solid black;
+      }
+
+      > li {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+
+      > li:last-of-type {
+        border-bottom: 1px solid black;
+      }
+    }
+
+    li {
+      background-color: white;
+      width: 35rem;
+    }
+
+    label[for="menu-toggle"] {
+      z-index: 2;
+      margin-left: auto;
+      margin-right: 5rem;
+      order: 2;
+      display: block;
+      align-self: center;
+    }
+
+    a {
+      font-size: 2rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      border-left: 0.5rem solid white;
+      border-right: 0.5rem solid white;
+    }
+
+    a:hover {
+      border-left: 0.5rem solid $curve-red;
+    }
+
+    .custom-logo-link {
+      border: none;
+    }
+
+    .custom-logo-link:hover {
+      border: none;
+    }
+
+    .menu-arrow {
+      margin-left: auto;
+      left: 0;
+    }
+
+    .sub-menu {
+      .menu-arrow {
+        float: right;
+      }
+    }
+
+    #primary-menu {
+      display: none;
+      height: 0;
+      order: 1;
+      align-items: center;
+      position: relative;
+      overflow: auto;
+
+      >li:first-of-type {
+        margin-top: 30vh;
+      }
+
+      >li:last-of-type {
+        margin-bottom: 30vh;
+      }
+
+      // Hävetä pitäis...........................
+      > li > ul > li > a {
+        padding-left: 3rem;
+      }
+
+      > li > ul > li > ul > li > a {
+        padding-left: 6rem;
+      }
+
+      > li > ul > li > ul > li > ul > li > a {
+        padding-left: 9rem;
+      }
+
+      > li > ul > li > ul > li > ul > li > ul > li > a {
+        padding-left: 12rem;
+      }
+    }
+
+    .menu-toggle:checked + #primary-menu {
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  // If javascript is enabled, mobile dropdowns are only visible on click, not on hover.
+  html.js {
+
+    .sub-menu.show {
+      display: flex;
+    }
+
+    .menu-arrow.turn {
+      transform: scaleY(-1);
+    }
+  }
+
+  html.no-js {
+    /* Display dropdown when hovered */
+    li:hover > ul {
+      display: flex;
+    }
+  }
 }
 
-.two {
-  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+body.noscroll {
+  overflow: hidden;
+  padding-right: 17px;
 }
 
-.three {
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+.line {
+  fill: none;
+  stroke: rgb(85,85,85);
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+label[for="menu-toggle"]:hover {
+  .line {
+    stroke: rgb(10,10,10);
+  }
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
