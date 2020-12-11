@@ -72,13 +72,13 @@
   align-items: center;
   color: white;
 
-  h1 {
+  .menu-item-title {
     text-align: center;
     font-weight: 500;
     font-size: 2.5rem;
   }
 
-  p {
+  .menu-item-subtitle {
     display: none;
   }
 }
@@ -111,7 +111,7 @@
             transform: scale(1.05);
           }
 
-          p {
+          .menu-item-subtitle {
             animation-name: tada;
           }
         }
@@ -120,7 +120,7 @@
           margin: 0;
         }
 
-        p {
+        .menu-item-subtitle {
           display: block;
           transform-origin: center bottom;
           animation-duration: 500ms;

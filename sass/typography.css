@@ -1,0 +1,39 @@
+/* Menu */
+/* Colors */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+body {
+  color: #443938;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  color: #7a81ea;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #c01f29;
+}
+
+a:active {
+  color: #f2d70c;
+}
+
+main, footer {
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=typography.css.map */

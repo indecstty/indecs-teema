@@ -1,19 +1,5 @@
 @import "variables";
 
-.skip-link {
-  height: 1px;
-  width: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
-  margin-bottom: -1px;
-  position: absolute;
-}
-
-.skip-link:focus {
-  position: unset;
-}
-
-
 html {
   font-size: 62.5%;
 }
@@ -34,7 +20,7 @@ body {
           "footer";
 }
 
-.site-content {
+main {
   grid-area: content;
 }
 
@@ -62,8 +48,6 @@ body {
 }
 
 main {
-  padding-left: 10rem;
-  padding-right: 10rem;
   margin-bottom: 5rem;
 }
 

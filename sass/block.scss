@@ -1,0 +1,26 @@
+@import "variables";
+
+
+main {
+  @include headings {
+    text-align: center;
+  }
+
+  .entry-header {
+    max-width: $content-width;
+    margin: 1rem auto;
+  }
+  .entry-content {
+    > * {
+      max-width: $content-width;
+      margin: 1rem auto;
+    }
+
+    .alignfull, .alignwide {
+      max-width: unset;
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+}
+

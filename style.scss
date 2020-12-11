@@ -21,7 +21,10 @@ Version: 0.1
 
 @import "sass/animations";
 
-body {
-background-color: antiquewhite;
-}
+@import "sass/block";
 
+@import "sass/accessibility";
+
+@import "sass/footer";
+
+@import "sass/typography";

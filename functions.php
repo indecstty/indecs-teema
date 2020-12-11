@@ -82,11 +82,40 @@ function indecsteema_no_js_class() {
 	document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 </script><?php
 }
+
 add_action('wp_head', 'indecsteema_no_js_class');
 
+function indecsteema_fonts_url() {
+//	$font_families = array();
+//	$font_families[] = 'Lato:300,300i,400,400i,700,700i';
+//	$font_families[] = 'Roboto:300,300i,400,400i,500,500i,700,700i';
+//
+//	$query_args = array(
+//		'family' => urlencode(implode('|', $font_families)),
+//		'subset' => urlencode('latin, latin-ext'),
+//		);
+//
+//	$fonts_url = add_query_arg($query_args, 'https://fonts.googleapis.com/css2');
+//	return esc_url_raw($fonts_url);
+
+
+	return "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap";
+}
+
+function indecsteema_resource_hints($urls, $relation_type) {
+	if (wp_style_is('indecsteema-fonts', 'queue') && 'preconnect' === $relation_type ) {
+		$urls[] = array(
+			'href' => 'https://fonts.gstatic.com',
+			'crossorigin',
+		);
+	}
+	return $urls;
+}
+add_filter('wp_resource_hints', 'indecsteema_resource_hints', 10, 2);
 
 function indecsteema_enqueue_scripts_and_styles() {
-	wp_enqueue_style('style', get_stylesheet_uri());
+	wp_enqueue_style('indecsteema-style', get_stylesheet_uri());
+	wp_enqueue_style('indecsteema-fonts', indecsteema_fonts_url(), array(), null);
 	wp_enqueue_style('icons', "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
 	wp_enqueue_script('primary-menu', get_template_directory_uri()."/js/primary-menu.js", null, null, true);
 }
@@ -255,7 +284,7 @@ class Indecsteema_Nav_Walker extends Walker_Nav_Menu
 
 		if ($args->walker->has_children)
 		{
-			$item_output .= '<a ' . 'class="has-dropdown" aria-haspopup="true"' . 'tabindex=0' .$attributes .'>';
+			$item_output .= '<a ' . 'class="has-dropdown" aria-haspopup="true"' . ' tabindex=0' .$attributes .'>';
 			$item_output .= '<span class="menu-text-container">';
 		}
 		else
