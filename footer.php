@@ -3,7 +3,14 @@
 
 ?>
 		<footer id="site-footer">
-			<p>Footer</p>
+			<?php if (is_active_sidebar('footer_widgets')) : ?>
+				<div id="footer_widgets_area">
+					<?php dynamic_sidebar('footer_widgets'); ?>
+				</div>
+			<?php endif;
+			if (has_nav_menu('social')) {
+				get_template_part('template-parts/navigation/social');
+			}?>
 		</footer>
 		<?php wp_footer(); ?>
 

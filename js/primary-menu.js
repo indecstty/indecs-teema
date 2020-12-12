@@ -28,20 +28,9 @@ function addOnClicker() {
             var dropdown = element.nextElementSibling;
             dropdown.classList.toggle("show");
 
-            // if (dropdown.classList.contains("show")) {
-            //     dropdown.classList.remove("show");
-            // } else {
-            //     dropdown.classList.add("show");
-            // }
-
             var arrow = element.querySelector(".menu-arrow");
             arrow.classList.toggle("turn");
 
-            // if (arrow.classList.contains("turn")) {
-            //     arrow.classList.remove("turn");
-            // } else {
-            //     arrow.classList.add("turn");
-            // }
         });
     })(i);
 }

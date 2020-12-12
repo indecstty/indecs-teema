@@ -14,11 +14,6 @@
 		<div id="site-content">
 			<div id="wrapper">
 				<main>
-<!--					<div id="page-header">-->
-<!--						<h1 id="page-title">--><?php //single_post_title(); ?><!-- dsfsfsd</h1>-->
-<!--					</div>-->
-
-					<!-- Ehkä paska tapa, tee ehkä ylemmällä tavalla -->
 					<?php while (have_posts() ) : the_post();
 					get_template_part('template-parts/page/content');
 					endwhile; ?>
