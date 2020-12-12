@@ -35,3 +35,16 @@ a:active {
 main, footer {
   line-height: 1.6;
 }
+
+
+main {
+  @include headings {
+    text-align: center;
+  }
+}
+
+.partners {
+  @include headings {
+    text-align: center;
+  }
+}

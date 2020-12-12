@@ -22,6 +22,7 @@ $portal_bg = ' style="background: url(' . get_header_image() . ') no-repeat left
 		endwhile; ?>
 	</main>
 	<aside class="partners">
+		<h2><?php _e('Partnered with', 'indecsdomain')?></h2>
 		<?php echo do_shortcode('[logo-slider]'); ?>
 	</aside>
 

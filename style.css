@@ -1027,9 +1027,6 @@ label[for=menu-toggle]:hover .line {
 }
 /* Menu */
 /* Colors */
-main h1, main h2, main h3, main h4, main h5, main h6 {
-  text-align: center;
-}
 main .entry-header {
   max-width: 110rem;
   margin: 1rem auto;
@@ -1182,6 +1179,14 @@ a:active {
 
 main, footer {
   line-height: 1.6;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  text-align: center;
+}
+
+.partners h1, .partners h2, .partners h3, .partners h4, .partners h5, .partners h6 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

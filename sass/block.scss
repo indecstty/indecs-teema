@@ -2,9 +2,6 @@
 
 
 main {
-  @include headings {
-    text-align: center;
-  }
 
   .entry-header {
     max-width: $content-width;
