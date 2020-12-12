@@ -22,7 +22,7 @@ $portal_bg = ' style="background: url(' . get_header_image() . ') no-repeat left
 		endwhile; ?>
 	</main>
 	<aside class="partners">
-		<h1>partners</h1>
+		<?php echo do_shortcode('[logo-slider]'); ?>
 	</aside>
 
 <?php get_footer();
