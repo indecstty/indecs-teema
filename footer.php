@@ -12,7 +12,13 @@
 				get_template_part('template-parts/navigation/social');
 			}?>
 		</footer>
-		<?php wp_footer(); ?>
+		<?php if (!function_exists( 'wp_footer')) { // Tell Wordpress we have closed the footer
+			function wp_footer() {
+				do_action('wp_footer');
+			}
+		}
+		wp_footer();
+		?>
 
 <!-- This should be included the proper Wordpress way -->
 <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
