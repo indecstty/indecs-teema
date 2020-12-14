@@ -3,14 +3,16 @@
 
 ?>
 		<footer id="site-footer">
-			<?php if (is_active_sidebar('footer_widgets')) : ?>
-				<div id="footer_widgets_area">
-					<?php dynamic_sidebar('footer_widgets'); ?>
-				</div>
-			<?php endif;
-			if (has_nav_menu('social')) {
-				get_template_part('template-parts/navigation/social');
-			}?>
+			<div class="footer-inner">
+				<?php if (is_active_sidebar('footer_widgets')) : ?>
+					<div id="footer_widgets_area">
+						<?php dynamic_sidebar('footer_widgets'); ?>
+					</div>
+				<?php endif;
+				if (has_nav_menu('social')) {
+					get_template_part('template-parts/navigation/social');
+				}?>
+			</div>
 		</footer>
 		<?php if (!function_exists( 'wp_footer')) { // Tell Wordpress we have closed the footer
 			function wp_footer() {
