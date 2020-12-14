@@ -26,13 +26,13 @@ function indecsteema_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Add translation
-	load_theme_textdomain('indecsteema', get_template_directory()."/languages");
+	load_theme_textdomain('indecsdomain', get_template_directory()."/languages");
 
 	// Add navigation menus
 	register_nav_menus( (array(
-		'portal' => __('Portal', 'indecsteema'),
-		'primary' => __('Primary Menu', 'indecsteema'),
-		'social' => __('Social Links Menu', 'indecsteema')))
+		'portal' => __('Portal', 'indecsdomain'),
+		'primary' => __('Primary Menu', 'indecsdomain'),
+		'social' => __('Social Links Menu', 'indecsdomain')))
 	);
 
 	// Add custom logo

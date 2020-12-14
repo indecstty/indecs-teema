@@ -8,11 +8,11 @@
 /** Include a skip to content link at the top of the page so that users can bypass the menu */
 function indecsteema_skip_link() {
 	echo '<a class="skip-link screen-reader-text" href="#main">'
-	     .__('Skip to the content', 'indecsteema' ).'</a>';
+	     .__('Skip to the content', 'indecsdomain' ).'</a>';
 }
 
 function indecsteema_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
-//	wp_die("kuole");
+
 	// Change SVG icon inside social links menu if there is supported URL.
 	if ( 'social' === $args->theme_location ) {
 		$svg = Indecsteema_SVG_Icons::get_social_link_svg( $item->url );

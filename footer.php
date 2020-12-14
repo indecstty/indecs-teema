@@ -14,6 +14,7 @@
 		</footer>
 		<?php wp_footer(); ?>
 
+<!-- This should be included the proper Wordpress way -->
 <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
 		<symbol id="icon-angle-down" viewBox="0 0 21 32">
