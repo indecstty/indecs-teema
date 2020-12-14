@@ -32,7 +32,7 @@ function indecsteema_setup() {
 	register_nav_menus( (array(
 		'portal' => __('Portal', 'indecsdomain'),
 		'primary' => __('Primary Menu', 'indecsdomain'),
-		'social' => __('Social Links Menu', 'indecsdomain')))
+		'social' => __('Social Media Menu', 'indecsdomain')))
 	);
 
 	// Add custom logo

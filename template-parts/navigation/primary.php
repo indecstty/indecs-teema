@@ -4,7 +4,7 @@
  */
 
 ?>
-<nav id="main-navigation" class="main-navigation" aria-label="<?php _e('Main menu', 'indecsdomain');?>">
+<nav id="main-navigation" class="main-navigation" aria-label="<?php _e('Primary menu', 'indecsdomain');?>">
 	<?php the_custom_logo(); // Logo if set ?>
 	<label for="menu-toggle">
 		<svg width="80" height="80" viewBox="0 0 100 100">
