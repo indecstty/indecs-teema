@@ -1027,15 +1027,19 @@ label[for=menu-toggle]:hover .line {
 }
 /* Menu */
 /* Colors */
-main .entry-header {
+main .entry-header,
+main .page-header {
   max-width: 110rem;
   margin: 1rem auto;
 }
-main .entry-content > * {
+main .entry-content > *,
+main .page-content > * {
   max-width: 110rem;
   margin: 1rem auto;
 }
-main .entry-content .alignfull, main .entry-content .alignwide {
+main .entry-content .alignfull, main .entry-content .alignwide,
+main .page-content .alignfull,
+main .page-content .alignwide {
   max-width: unset;
   width: 100%;
   margin: 1rem 0;

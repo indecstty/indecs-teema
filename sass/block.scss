@@ -3,11 +3,15 @@
 
 main {
 
-  .entry-header {
+  // This is stupid. Margins only applied to the containers with a class that is explicitly
+  // stated here. Couldn't think of a better way to do this.
+  .entry-header,
+  .page-header {
     max-width: $content-width;
     margin: 1rem auto;
   }
-  .entry-content {
+  .entry-content,
+  .page-content {
     > * {
       max-width: $content-width;
       margin: 1rem auto;
