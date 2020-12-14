@@ -4,5 +4,5 @@
 	include_once(ABSPATH.'wp-admin/includes/plugin.php');
 	if (is_plugin_active("logo-slider-wp/logo-slider-wp.php")) {
 		echo do_shortcode('[logo-slider]');
-	}
-	?></aside><?php
+	} ?>
+</aside>
