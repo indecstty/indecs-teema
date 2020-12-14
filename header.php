@@ -13,7 +13,13 @@
 </head>
 
 <body <?php body_class(); // Classes for body provided by Wordpress?>>
-	<?php wp_body_open(); // Notify Wordpress that the body has been opened for a hook
+
+	<?php if ( !function_exists('wp_body_open')) { // Notify Wordpress that the body has been opened for a hook
+		function wp_body_open() {
+			do_action('wp_body_open');
+		}
+	}
+	wp_body_open();
 
 	// Hidden keyboard-focusable link to skip to main content
 	indecsteema_skip_link();?>
