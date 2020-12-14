@@ -10,15 +10,13 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  **/
 
-		get_header(); ?>
-		<div id="site-content">
-			<div id="wrapper">
-				<main>
-					<?php while (have_posts() ) : the_post();
-					get_template_part('template-parts/page/content');
-					endwhile; ?>
-				</main>
-			</div>
-		</div>
+get_header(); ?>
+<main>
+	<?php while (have_posts() ) : the_post();
+	get_template_part('template-parts/page/content');
+	endwhile; ?>
+</main>
+<?php get_template_part("template-parts/page/partners"); ?>
 
-		<?php get_footer();
+
+<?php get_footer();
