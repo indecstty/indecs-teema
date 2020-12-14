@@ -5,9 +5,7 @@
 		<footer id="site-footer">
 			<div class="footer-inner">
 				<?php if (is_active_sidebar('footer_widgets')) : ?>
-					<div id="footer_widgets_area">
-						<?php dynamic_sidebar('footer_widgets'); ?>
-					</div>
+					<?php dynamic_sidebar('footer_widgets'); ?>
 				<?php endif;
 				if (has_nav_menu('social')) {
 					get_template_part('template-parts/navigation/social');
