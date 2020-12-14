@@ -3,7 +3,7 @@
 
 ?>
 		<footer id="site-footer">
-			<div class="footer-inner">
+			<div class="footer-inner footer-grid">
 				<?php if (is_active_sidebar('footer_widgets')) : ?>
 					<?php dynamic_sidebar('footer_widgets'); ?>
 				<?php endif;
