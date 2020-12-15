@@ -10,4 +10,4 @@ get_header(); ?>
 		<h1><?= __("Page not found.", "indecsdomain");?></h1>
 	</section>
 </main>
-get_footer();
+<?php get_footer();
