@@ -10,5 +10,4 @@ get_header(); ?>
 		<h1><?= __("Page not found.", "indecsdomain");?></h1>
 	</section>
 </main>
-<?php get_template_part("template-parts/page/partners");
 get_footer();
