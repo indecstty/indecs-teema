@@ -33,5 +33,6 @@ Version: 0.1
 // Fixes partners container from "Logo Slider by LogicHunt.com"-plugin
 // going over menu when scrolled. For sure doesn't belong here. Yikes.
 .owl-carousel {
-  z-index: unset !important;
+  z-index: unset;
+  background: red;
 }
