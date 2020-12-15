@@ -1,7 +1,7 @@
 <?php
 /** The template for displaying the footer */
 
-?>
+get_template_part("template-parts/page/partners"); ?>
 		<footer id="site-footer">
 			<div class="footer-inner footer-grid">
 				<?php if (is_active_sidebar('footer_widgets')) : ?>

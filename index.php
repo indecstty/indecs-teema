@@ -16,7 +16,6 @@ get_header(); ?>
 	get_template_part('template-parts/page/content');
 	endwhile; ?>
 </main>
-<?php get_template_part("template-parts/page/partners"); ?>
 
 
 <?php get_footer();
