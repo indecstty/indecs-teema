@@ -35,3 +35,9 @@ Version: 0.1
 .owl-carousel {
   z-index: unset;
 }
+
+// Align items centrally in the logo slider. This rule doesn't belong here either
+.owl-carousel {
+  display: flex;
+  align-items: center;
+}
