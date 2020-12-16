@@ -38,8 +38,10 @@ main, footer {
 
 
 main {
-  @include headings {
-    text-align: center;
+  .entry-header, .page-header {
+    @include headings {
+      text-align: center;
+    }
   }
 }
 

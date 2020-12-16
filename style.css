@@ -1185,7 +1185,7 @@ main, footer {
   line-height: 1.6;
 }
 
-main h1, main h2, main h3, main h4, main h5, main h6 {
+main .entry-header h1, main .entry-header h2, main .entry-header h3, main .entry-header h4, main .entry-header h5, main .entry-header h6, main .page-header h1, main .page-header h2, main .page-header h3, main .page-header h4, main .page-header h5, main .page-header h6 {
   text-align: center;
 }
 
