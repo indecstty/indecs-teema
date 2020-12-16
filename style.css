@@ -772,6 +772,7 @@ label[for=menu-toggle]:hover .line {
   display: block;
   object-fit: cover;
   width: 100%;
+  height: auto;
   backface-visibility: hidden;
   filter: brightness(85%) saturate(83%);
   transition: all 0.2s ease-out;
