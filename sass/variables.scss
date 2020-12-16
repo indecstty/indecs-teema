@@ -1,5 +1,9 @@
 @import "mixins";
 
+// Block
+$block-padding-width: 4rem;
+$content-width: 90rem;
+$wide-width: 110rem;
 
 /* Menu */
 $menu-height: 10rem;
@@ -38,8 +42,3 @@ $link-visited-color: $curve-red;
 // Section border
 $section-border-color: rgba(0,0,0,0.2);
 
-
-// Block
-$block-padding-width: 4rem;
-$content-width: 90rem;
-$wide-width: 110rem;
