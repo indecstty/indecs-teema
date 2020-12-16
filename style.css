@@ -1209,7 +1209,7 @@ main .entry-header h1, main .entry-header h2, main .entry-header h3, main .entry
   z-index: unset;
 }
 
-.owl-carousel {
+.owl-stage {
   display: flex;
   align-items: center;
 }
