@@ -30,9 +30,8 @@ main {
     }
 
     .alignwide {
-      max-width: unset;
-      width: $wide-width;
-      margin: 1rem 0;
+      max-width: $wide-width;
+      margin: 1rem auto;
       padding-left: $block-padding-width;
       padding-right: $block-padding-width;
     }

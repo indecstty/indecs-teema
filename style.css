@@ -1051,9 +1051,8 @@ main .page-content .alignfull {
 }
 main .entry-content .alignwide,
 main .page-content .alignwide {
-  max-width: unset;
-  width: 110rem;
-  margin: 1rem 0;
+  max-width: 110rem;
+  margin: 1rem auto;
   padding-left: 4rem;
   padding-right: 4rem;
 }
