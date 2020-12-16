@@ -9,18 +9,32 @@ main {
   .page-header {
     max-width: $content-width;
     margin: 1rem auto;
+    padding-left: $block-padding-width;
+    padding-right: $block-padding-width;
   }
   .entry-content,
   .page-content {
     > * {
       max-width: $content-width;
       margin: 1rem auto;
+      padding-left: $block-padding-width;
+      padding-right: $block-padding-width;
     }
 
-    .alignfull, .alignwide {
+    .alignfull {
       max-width: unset;
       width: 100%;
       margin: 1rem 0;
+      padding-left: $block-padding-width;
+      padding-right: $block-padding-width;
+    }
+
+    .alignwide {
+      max-width: unset;
+      width: $wide-width;
+      margin: 1rem 0;
+      padding-left: $block-padding-width;
+      padding-right: $block-padding-width;
     }
   }
 }
