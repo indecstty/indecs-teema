@@ -397,13 +397,13 @@ main {
   margin-bottom: 5rem;
 }
 
-body.js .fade-in {
+html.js .fade-in {
   opacity: 0;
   transform-origin: center bottom;
   animation-duration: 1s;
   animation-fill-mode: both;
 }
-body.js .fade-in.appear {
+html.js .fade-in.appear {
   animation-name: fadeInUp;
 }
 
