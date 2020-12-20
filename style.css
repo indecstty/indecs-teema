@@ -1050,9 +1050,8 @@ main .page-content .alignfull {
 }
 main .entry-content .alignwide,
 main .page-content .alignwide {
-  max-width: calc(max($wide-width, 100%));
+  max-width: max(110rem, 100%);
   margin: 1rem auto;
-  background: green;
   padding-left: 4rem;
   padding-right: 4rem;
 }

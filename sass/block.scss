@@ -29,9 +29,8 @@ main {
     }
 
     .alignwide {
-      max-width: calc(max($wide-width, 100%));
+      max-width: max(#{$wide-width}, 100%);
       margin: 1rem auto;
-      background: green;
       padding-left: $block-padding-width;
       padding-right: $block-padding-width;
     }
