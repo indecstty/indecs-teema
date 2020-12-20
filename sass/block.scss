@@ -22,16 +22,16 @@ main {
     }
 
     .alignfull {
-      max-width: unset;
-      width: 100%;
+      max-width: 100%;
       margin: 1rem 0;
       padding-left: $block-padding-width;
       padding-right: $block-padding-width;
     }
 
     .alignwide {
-      max-width: min($wide-width, 100%);
+      max-width: calc(max($wide-width, 100%));
       margin: 1rem auto;
+      background: green;
       padding-left: $block-padding-width;
       padding-right: $block-padding-width;
     }

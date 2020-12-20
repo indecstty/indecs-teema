@@ -6,7 +6,10 @@
  **/
 
 get_header();
-$portal_bg = ' style="background: url(' . get_header_image() . ') no-repeat left center fixed;background-size:cover"';
+
+if (has_header_image()) {
+	$portal_bg = ' style="background: url(' . get_header_image() . ') no-repeat left center fixed;background-size:cover;height:70vh;"';
+}
 ?>
 	<div class="portal-wrapper" <?= $portal_bg ?>>
 		<nav class="portal-navigation" aria-label="<?php _e('Subsite navigation', 'indecsdomain');?>">

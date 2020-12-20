@@ -379,7 +379,6 @@ main {
 
 .portal-wrapper {
   background-size: cover;
-  height: 70vh;
   grid-area: portal;
 }
 
@@ -1044,16 +1043,16 @@ main .page-content > * {
 }
 main .entry-content .alignfull,
 main .page-content .alignfull {
-  max-width: unset;
-  width: 100%;
+  max-width: 100%;
   margin: 1rem 0;
   padding-left: 4rem;
   padding-right: 4rem;
 }
 main .entry-content .alignwide,
 main .page-content .alignwide {
-  max-width: 110rem;
+  max-width: calc(max($wide-width, 100%));
   margin: 1rem auto;
+  background: green;
   padding-left: 4rem;
   padding-right: 4rem;
 }
