@@ -361,6 +361,7 @@ body {
   padding: 0;
   min-height: 100vh;
   display: grid;
+  grid-row-gap: 3rem;
   grid-template-columns: 100%;
   grid-template-rows: auto auto 1fr auto auto;
   grid-template-areas: "header" "portal" "content" "partners" "footer";
@@ -387,13 +388,8 @@ main {
 }
 
 #site-footer {
-  margin-top: 5rem;
   grid-area: footer;
   overflow: hidden;
-}
-
-main {
-  margin-bottom: 5rem;
 }
 
 html.js .fade-in {
