@@ -361,7 +361,7 @@ body {
   padding: 0;
   min-height: 100vh;
   display: grid;
-  grid-row-gap: 3rem;
+  grid-row-gap: 1rem;
   grid-template-columns: 100%;
   grid-template-rows: auto auto 1fr auto auto;
   grid-template-areas: "header" "portal" "content" "partners" "footer";
