@@ -38,6 +38,11 @@ main, footer {
 
 
 main {
+  @include headings {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .entry-header, .page-header {
     @include headings {
       text-align: center;
