@@ -1026,28 +1026,32 @@ label[for=menu-toggle]:hover .line {
 main .entry-header,
 main .page-header {
   max-width: 90rem;
-  margin: 1rem auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 4rem;
   padding-right: 4rem;
 }
 main .entry-content > *,
 main .page-content > * {
   max-width: 90rem;
-  margin: 1rem auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 4rem;
   padding-right: 4rem;
 }
 main .entry-content .alignfull,
 main .page-content .alignfull {
   max-width: 100%;
-  margin: 1rem 0;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 0;
   padding-right: 0;
 }
 main .entry-content .alignwide,
 main .page-content .alignwide {
   max-width: min(110rem, 100%);
-  margin: 1rem auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 4rem;
   padding-right: 4rem;
 }
