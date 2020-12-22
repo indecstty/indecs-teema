@@ -1041,8 +1041,6 @@ main .entry-content .alignfull,
 main .page-content .alignfull {
   max-width: 100%;
   margin: 1rem 0;
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 main .entry-content .alignwide,
 main .page-content .alignwide {
