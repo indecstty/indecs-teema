@@ -1209,6 +1209,10 @@ main .entry-header h1, main .entry-header h2, main .entry-header h3, main .entry
   text-align: center;
 }
 
+img {
+  height: auto;
+}
+
 .owl-carousel {
   z-index: unset;
 }
