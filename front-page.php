@@ -8,7 +8,16 @@
 get_header();
 
 if (has_header_image()) {
-	$portal_bg = ' style="background: url(' . get_header_image() . ') no-repeat left center fixed;background-size:cover;height:70vh;"';
+	$portal_bg = ' style="background: url(' . get_header_image() . ') no-repeat left center fixed;background-size:cover;"';
+	?>
+	<style>
+		@media screen and (min-width: 70rem) {
+			.portal-wrapper {
+				height: 70vh;
+			}
+		}
+	</style>
+	<?php
 }
 ?>
 	<div class="portal-wrapper" <?= $portal_bg ?>>
