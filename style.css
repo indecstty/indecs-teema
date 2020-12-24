@@ -1109,6 +1109,10 @@ main .page-content .alignwide {
   z-index: 100000;
 }
 
+.scroll-margin-top-150 {
+  scroll-margin-top: 150px;
+}
+
 /* Menu */
 /* Colors */
 #site-footer {
