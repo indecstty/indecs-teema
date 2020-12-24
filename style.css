@@ -723,14 +723,11 @@ label[for=menu-toggle]:hover .line {
 /* Colors */
 .portal-wrapper {
   color: white;
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.portal-navigation {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 .portal-navigation ul#portal-menu {
   margin: 0;
   padding: 0;

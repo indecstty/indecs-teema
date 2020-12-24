@@ -3,13 +3,17 @@
 
 .portal-wrapper {
   color: white;
-  position: relative;
+  //position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
 }
 
 .portal-navigation {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  //position: absolute;
+  //bottom: 0;
+  //right: 0;
 
   ul#portal-menu {
     margin: 0;
