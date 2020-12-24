@@ -1037,8 +1037,8 @@ main .page-content > * {
   padding-left: 4rem;
   padding-right: 4rem;
 }
-main .entry-content ul, main .entry-content ol, main .entry-content dl,
-main .page-content ul,
+main .entry-content > ul, main .entry-content ol, main .entry-content dl,
+main .page-content > ul,
 main .page-content ol,
 main .page-content dl {
   padding-left: 14rem;

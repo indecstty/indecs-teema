@@ -23,7 +23,7 @@ main {
       padding-right: $block-padding-width;
     }
 
-    ul, ol, dl {
+    > ul, ol, dl {
       padding-left: 14rem;
     }
 
