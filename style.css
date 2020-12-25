@@ -742,6 +742,7 @@ label[for=menu-toggle]:hover .line {
   width: 30rem;
   margin-right: 3rem;
   margin-bottom: 3rem;
+  transition: transform 0.2s;
 }
 .portal-navigation ul#portal-menu li:hover {
   transform: scale(1.05);
