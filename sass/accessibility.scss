@@ -49,5 +49,10 @@
 }
 
 .scroll-margin-top-150 {
-  scroll-margin-top:150px;  
+  scroll-snap-margin-top: 150px;
+  scroll-margin-top: 150px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

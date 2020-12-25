@@ -1110,7 +1110,12 @@ main .page-content .alignwide {
 }
 
 .scroll-margin-top-150 {
+  scroll-snap-margin-top: 150px;
   scroll-margin-top: 150px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Menu */
