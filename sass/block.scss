@@ -23,8 +23,8 @@ main {
       padding-right: $block-padding-width;
     }
 
-    > ul, ol, dl {
-      padding-left: 14rem;
+    > ul, ol, dl > li, dt, dd {
+      margin-left: 4rem;
     }
 
     .alignfull {
