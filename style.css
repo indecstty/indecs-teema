@@ -843,9 +843,17 @@ label[for=menu-toggle]:hover .line {
     border-color: whitesmoke;
   }
 }
+/* Menu */
+/* Colors */
 #social-media-menu {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#social-media-menu svg {
+  fill: #505050;
 }
 
 @keyframes bounce {
@@ -1168,15 +1176,6 @@ address p {
 #footer ul {
   list-style: none;
   padding-left: 0;
-}
-
-#social-media-menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-#social-media-menu svg {
-  fill: #7a81ea;
 }
 
 /* Menu */

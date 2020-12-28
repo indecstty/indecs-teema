@@ -44,12 +44,3 @@ address {
   padding-left: 0;
 }
 
-#social-media-menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  svg {
-    fill: $link-color;
-  }
-}
