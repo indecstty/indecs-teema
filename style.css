@@ -855,6 +855,9 @@ label[for=menu-toggle]:hover .line {
 #social-media-menu svg {
   fill: #505050;
 }
+#social-media-menu svg:hover {
+  fill: #787878;
+}
 
 @keyframes bounce {
   from, 20%, 53%, to {

@@ -11,4 +11,8 @@
   svg {
     fill: $footer-font-color;
   }
+
+  svg:hover {
+    fill: rgb(120,120,120);
+  }
 }
