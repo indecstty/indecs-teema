@@ -23,15 +23,15 @@ main {
       padding-right: $block-padding-width;
     }
 
-    > ul li{
+    > ul > li{
       margin-left: 4rem;
     }
 
-    > ol li {
+    > ol > li {
       margin-left: 4rem;
     }
 
-    > dl dt, dd {
+    > dl > dt, dl > dd {
       margin-left: 4rem;
     }
 

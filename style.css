@@ -1038,17 +1038,17 @@ main .page-content > * {
   padding-left: 4rem;
   padding-right: 4rem;
 }
-main .entry-content > ul li,
-main .page-content > ul li {
+main .entry-content > ul > li,
+main .page-content > ul > li {
   margin-left: 4rem;
 }
-main .entry-content > ol li,
-main .page-content > ol li {
+main .entry-content > ol > li,
+main .page-content > ol > li {
   margin-left: 4rem;
 }
-main .entry-content > dl dt, main .entry-content dd,
-main .page-content > dl dt,
-main .page-content dd {
+main .entry-content > dl > dt, main .entry-content dl > dd,
+main .page-content > dl > dt,
+main .page-content dl > dd {
   margin-left: 4rem;
 }
 main .entry-content .alignfull,
