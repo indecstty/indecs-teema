@@ -129,7 +129,7 @@ add_filter('wp_resource_hints', 'indecsteema_resource_hints', 10, 2);
 function indecsteema_enqueue_scripts_and_styles() {
 	wp_enqueue_style('indecsteema-style', get_stylesheet_uri());
 	wp_enqueue_style('indecsteema-fonts', indecsteema_fonts_url(), array(), null);
-	wp_enqueue_style('icons', "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
+//	wp_enqueue_style('icons', "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
 	wp_enqueue_script('primary-menu', get_template_directory_uri()."/js/primary-menu.js", null, null, true);
 	wp_enqueue_script('section-obs', get_template_directory_uri()."/js/section-obs.js", null, null, true);
 }
