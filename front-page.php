@@ -28,7 +28,7 @@ if (has_header_image()) {
 			?>
 		</nav>
 	</div>
-	<main>
+	<main id="main">
 		<?php while (have_posts() ) : the_post();
 			get_template_part('template-parts/page/content');
 		endwhile; ?>

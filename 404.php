@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-<main>
+<main id="main">
 	<section class="error-404 not-found">
 		<h1><?= __("Page not found.", "indecsdomain");?></h1>
 	</section>
