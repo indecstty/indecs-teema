@@ -843,6 +843,11 @@ label[for=menu-toggle]:hover .line {
     border-color: whitesmoke;
   }
 }
+@media screen and (min-width: 70rem) {
+  .portal-wrapper.has-header-image {
+    height: 70vh;
+  }
+}
 /* Menu */
 /* Colors */
 #social-media-menu {
