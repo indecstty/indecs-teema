@@ -1,0 +1,19 @@
+// Fixes partners container from "Logo Slider by LogicHunt.com"-plugin
+// going over menu when scrolled. For sure doesn't belong here. Yikes.
+.owl-carousel {
+  z-index: unset;
+}
+
+// Align items centrally in the logo slider. This rule doesn't belong here either
+.owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+.lgx-logo-slider-wp .hover-zoomin .lgx-logo-item .lgx-logo-img {
+  -webkit-transform: scale(0.93);
+  -moz-transform: scale(0.93);
+  -o-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
+}

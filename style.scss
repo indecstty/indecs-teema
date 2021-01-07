@@ -31,23 +31,14 @@ Version: 0.1
 
 @import "sass/media";
 
+@import "sass/logoslider";
 
-// Fixes partners container from "Logo Slider by LogicHunt.com"-plugin
-// going over menu when scrolled. For sure doesn't belong here. Yikes.
-.owl-carousel {
-  z-index: unset;
+
+.scroll-margin-top-150 {
+  scroll-snap-margin-top: 150px;
+  scroll-margin-top: 150px;
 }
 
-// Align items centrally in the logo slider. This rule doesn't belong here either
-.owl-stage {
-  display: flex;
-  align-items: center;
+html {
+  scroll-behavior: smooth;
 }
-
-.lgx-logo-slider-wp .hover-zoomin .lgx-logo-item .lgx-logo-img {
-  -webkit-transform: scale(0.93);
-  -moz-transform: scale(0.93);
-  -o-transform: scale(0.93);
-  -ms-transform: scale(0.93);
-  transform: scale(0.93);
-  }

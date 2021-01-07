@@ -6,7 +6,7 @@
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: $h1;
 }
 
 body {
@@ -53,5 +53,6 @@ main {
 .partners {
   @include headings {
     text-align: center;
+    font-size: $h1;
   }
 }

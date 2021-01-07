@@ -81,7 +81,7 @@
   .menu-item-title {
     text-align: center;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: $h2;
   }
 
   .menu-item-subtitle {
@@ -137,7 +137,7 @@
           margin-bottom: 2%;
           padding: 1.5rem 2rem;
           font-weight: 700;
-          font-size: 1.8rem;
+          font-size: $h3;
 
           background-color: white;
           color: $font-color;
