@@ -16,6 +16,7 @@ main {
   .entry-content,
   .page-content {
     > * {
+      width: unset;
       max-width: $content-width;
       margin-left: auto;
       margin-right: auto;
