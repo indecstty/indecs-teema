@@ -89,6 +89,7 @@
   }
 }
 
+
 @media screen and (max-width: 70rem) {
 
   .portal-wrapper {
@@ -150,5 +151,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  .portal-wrapper.has-header-image{
+    height: 70vh;
   }
 }
