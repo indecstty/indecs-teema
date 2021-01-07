@@ -350,6 +350,7 @@ template {
 }
 
 /* Menu */
+/* Font sizes */
 /* Colors */
 html {
   font-size: 62.5%;
@@ -404,6 +405,7 @@ html.js .fade-in.appear {
 }
 
 /* Menu */
+/* Font sizes */
 /* Colors */
 /* Set background and borders for navbar and set it sticky */
 nav.main-navigation {
@@ -720,6 +722,7 @@ label[for=menu-toggle]:hover .line {
 }
 
 /* Menu */
+/* Font sizes */
 /* Colors */
 .portal-wrapper {
   color: white;
@@ -849,6 +852,7 @@ label[for=menu-toggle]:hover .line {
   }
 }
 /* Menu */
+/* Font sizes */
 /* Colors */
 #social-media-menu {
   list-style: none;
@@ -1037,6 +1041,7 @@ label[for=menu-toggle]:hover .line {
   }
 }
 /* Menu */
+/* Font sizes */
 /* Colors */
 main .entry-header,
 main .page-header {
@@ -1133,16 +1138,8 @@ main .page-content .alignwide {
   z-index: 100000;
 }
 
-.scroll-margin-top-150 {
-  scroll-snap-margin-top: 150px;
-  scroll-margin-top: 150px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 /* Menu */
+/* Font sizes */
 /* Colors */
 #site-footer {
   background-color: #ecebeb;
@@ -1151,11 +1148,6 @@ html {
   grid-template-columns: 1fr auto 1fr;
   grid-template-areas: "left content right";
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-#site-footer strong {
-  font-family: Roboto, sans-serif;
-  font-weight: bold;
-  font-size: 1.8rem;
 }
 
 .footer-inner {
@@ -1187,6 +1179,7 @@ address p {
 }
 
 /* Menu */
+/* Font sizes */
 /* Colors */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
@@ -1234,6 +1227,7 @@ main .entry-header h1, main .entry-header h2, main .entry-header h3, main .entry
 
 .partners h1, .partners h2, .partners h3, .partners h4, .partners h5, .partners h6 {
   text-align: center;
+  font-size: 4rem;
 }
 
 img {
@@ -1255,6 +1249,15 @@ img {
   -o-transform: scale(0.93);
   -ms-transform: scale(0.93);
   transform: scale(0.93);
+}
+
+.scroll-margin-top-150 {
+  scroll-snap-margin-top: 150px;
+  scroll-margin-top: 150px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */
