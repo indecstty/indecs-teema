@@ -1170,7 +1170,7 @@ address p {
   flex-wrap: wrap;
 }
 .footer-grid > * {
-  margin: 1rem;
+  margin: 1rem 2rem;
   max-width: 30rem;
 }
 
