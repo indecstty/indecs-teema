@@ -1171,7 +1171,7 @@ address p {
 }
 .footer-grid > * {
   margin: 1rem 2rem;
-  max-width: 30rem;
+  width: 30rem;
 }
 
 #footer ul {
