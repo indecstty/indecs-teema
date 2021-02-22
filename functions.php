@@ -136,13 +136,12 @@ function indecsteema_enqueue_scripts_and_styles() {
 add_action('wp_enqueue_scripts', 'indecsteema_enqueue_scripts_and_styles');
 
 
-
-function indecsteema_jou() {
-	echo "jouuuuuuuuuuu";
+// Not sure what the proper way to do this is but this works for now.
+function indecsteema_ajax_refresher() {
 	?>
 	<script>
-		console.log("Jouuuu");
+		sectionObserver();
 	</script>
 	<?php
 }
-add_action('indecsteema_ajax_refresh', 'indecsteema_jou');
+add_action('indecsteema_ajax_refresh', 'indecsteema_ajax_refresher');
