@@ -134,3 +134,4 @@ function indecsteema_enqueue_scripts_and_styles() {
 	wp_enqueue_script('section-obs', get_template_directory_uri()."/js/section-obs.js", null, null, true);
 }
 add_action('wp_enqueue_scripts', 'indecsteema_enqueue_scripts_and_styles');
+add_action('ajax_refresh', 'section-obs');
