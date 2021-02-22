@@ -1,4 +1,5 @@
 function sectionObserver() {
+    console.log("sectionObserver");
     const faders = document.querySelectorAll('.fade-in');
 
     const appearOptions = {
