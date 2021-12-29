@@ -11,27 +11,27 @@ Version: 0.1
 
 
 --------------------------------------------------------------*/
-@import "sass/normalize";
+@use "sass/_normalize";
 
-@import "sass/layout";
+@use "sass/_layout";
 
-@import "sass/navigation";
-@import "sass/portal";
-@import "sass/social";
+@use "sass/_navigation";
+@use "sass/_portal";
+@use "sass/_social";
 
-@import "sass/animations";
+@use "sass/_animations";
 
-@import "sass/block";
+@use "sass/_block";
 
-@import "sass/accessibility";
+@use "sass/_accessibility";
 
-@import "sass/footer";
+@use "sass/_footer";
 
-@import "sass/typography";
+@use "sass/_typography";
 
-@import "sass/media";
+@use "sass/_media";
 
-@import "sass/logoslider";
+@use "sass/_logoslider";
 
 
 .scroll-margin-top-150 {
@@ -42,3 +42,4 @@ Version: 0.1
 html {
   scroll-behavior: smooth;
 }
+

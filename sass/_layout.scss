@@ -1,11 +1,11 @@
-@import "variables";
+@use "_variables";
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  background-color: $background-color;
+  background-color: variables.$background-color;
   margin: 0;
   padding: 0;
   min-height: 100vh;

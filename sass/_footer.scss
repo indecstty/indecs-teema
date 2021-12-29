@@ -1,12 +1,12 @@
-@import "variables";
+@use "_variables";
 
 #site-footer {
-  background-color: $footer-background-color;
-  color: $footer-font-color;
+  background-color: variables.$footer-background-color;
+  color: variables.$footer-font-color;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-areas: "left content right";
-  border-top: 1px solid $section-border-color;
+  border-top: 1px solid variables.$section-border-color;
 
   //strong {
   //  font-family: Roboto, sans-serif;

@@ -1,16 +1,16 @@
-@import "variables";
+@use "_variables";
 
 /* Set background and borders for navbar and set it sticky */
 nav.main-navigation {
-  background-color: $menu-background-color;
+  background-color: variables.$menu-background-color;
   position: sticky;
   top: 0;
-  border-bottom: 1px solid $section-border-color;
-  box-shadow: 0 0 3px 0 $section-border-color;
+  border-bottom: 1px solid variables.$section-border-color;
+  box-shadow: 0 0 3px 0 variables.$section-border-color;
 
   /* Make links blocks and remove some styling */
   a {
-    color: $menu-font-color;
+    color: variables.$menu-font-color;
     display: block;
     font-size: 1.6rem;
     text-decoration: none;
@@ -20,7 +20,7 @@ nav.main-navigation {
     }
 
     &:hover {
-      color: $menu-font-hover-color;
+      color: variables.$menu-font-hover-color;
     }
   }
 
@@ -75,8 +75,6 @@ nav.main-navigation {
     padding: 0;
     min-width: 0;
   }
-
-
 }
 
 @media screen and (min-width: 92rem) {
@@ -90,7 +88,7 @@ nav.main-navigation {
     /* Style links as blocks and give them padding and min-width */
     a {
       box-sizing: border-box;
-      min-width: $menu-dropdown-width;
+      min-width: variables.$menu-dropdown-width;
       padding: 1.5rem 3rem 1.5rem 2.5rem;
     }
 
@@ -104,7 +102,7 @@ nav.main-navigation {
     #primary-menu {
       flex-direction: row;
       flex-wrap: wrap;
-      min-height: $menu-height;
+      min-height: variables.$menu-height;
 
       /* Align mainrow links to the center of each element.*/
       > li {
@@ -115,8 +113,8 @@ nav.main-navigation {
       > li > a {
         min-width: 0;
         padding: 0 3rem;
-        border-top: 0.5rem solid $menu-background-color;
-        border-bottom: 0.5rem solid $menu-background-color;
+        border-top: 0.5rem solid variables.$menu-background-color;
+        border-bottom: 0.5rem solid variables.$menu-background-color;
 
         height: 100%;
         display: flex;
@@ -132,7 +130,7 @@ nav.main-navigation {
       /* Top border on hover */
       > li:hover > a,
       > li:focus-within > a  {
-        border-top: $menu-border-height solid $curve-red;
+        border-top: variables.$menu-border-height solid variables.$curve-red;
       }
 
       > li:hover > a .menu-arrow,
@@ -149,7 +147,7 @@ nav.main-navigation {
 
       /* Left border when not hovered */
       li > a {
-        border-left: 0.5rem solid $menu-background-color;
+        border-left: 0.5rem solid variables.$menu-background-color;
       }
 
       /* Display sub-dropdowns to the right of the original */
@@ -162,7 +160,7 @@ nav.main-navigation {
       /* Left border on hover */
       li:hover > a,
       li:focus-within > a  {
-        border-left: 0.5rem solid $curve-red;
+        border-left: 0.5rem solid variables.$curve-red;
 
       }
 
@@ -190,7 +188,7 @@ nav.main-navigation {
 nav.main-navigation .custom-logo {
   margin-left: 1rem;
   margin-right: 1rem;
-  height: $menu-height;
+  height: variables.$menu-height;
   width: auto;
   padding: 0;
   position: static;
@@ -242,7 +240,7 @@ nav.main-navigation .custom-logo {
     }
 
     a:hover {
-      border-left: 0.5rem solid $curve-red;
+      border-left: 0.5rem solid variables.$curve-red;
     }
 
     .custom-logo-link {

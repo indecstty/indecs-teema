@@ -1,22 +1,23 @@
-@import "variables";
+@use "_variables";
+@use "_mixins";
 
-@include headings {
+@include mixins.headings {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
 h1 {
-  font-size: $h1;
+  font-size: variables.$h1;
 }
 
 body {
-  color: $font-color;
+  color: variables.$font-color;
   font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
 }
 
 a {
-  color: $link-color;
+  color: variables.$link-color;
   text-decoration: none;
 }
 
@@ -25,11 +26,11 @@ a:hover {
 }
 
 a:visited {
-  color: $link-visited-color;
+  color: variables.$link-visited-color;
 }
 
 a:active {
-  color: $link-active-color;
+  color: variables.$link-active-color;
 }
 
 main, footer {
@@ -38,21 +39,21 @@ main, footer {
 
 
 main {
-  @include headings {
+  @include mixins.headings {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
 
   .entry-header, .page-header {
-    @include headings {
+    @include mixins.headings {
       text-align: center;
     }
   }
 }
 
 .partners {
-  @include headings {
+  @include mixins.headings {
     text-align: center;
-    font-size: $h1;
+    font-size: variables.$h1;
   }
 }

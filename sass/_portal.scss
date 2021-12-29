@@ -1,4 +1,4 @@
-@import "variables";
+@use "_variables";
 
 
 .portal-wrapper {
@@ -26,7 +26,7 @@
       position: relative;
 
       border: 1px solid rgb(200,200,200);
-      box-shadow: 0 0 3px 0 $section-border-color;
+      box-shadow: 0 0 3px 0 variables.$section-border-color;
       width: 30rem;
       margin-right: 3rem;
       margin-bottom: 3rem;
@@ -81,7 +81,7 @@
   .menu-item-title {
     text-align: center;
     font-weight: 500;
-    font-size: $h2;
+    font-size: variables.$h2;
   }
 
   .menu-item-subtitle {
@@ -138,10 +138,10 @@
           margin-bottom: 2%;
           padding: 1.5rem 2rem;
           font-weight: 700;
-          font-size: $h3;
+          font-size: variables.$h3;
 
           background-color: white;
-          color: $font-color;
+          color: variables.$font-color;
 
           &:active {
             background-color: rgba(245,245,245);

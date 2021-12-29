@@ -1,15 +1,3 @@
-/*
-Theme Name: Indecsteema
-Author: Markus Uusitalo
-Description:  Wordpress theme for Indecs
-Version: 0.1
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-
-
---------------------------------------------------------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -404,9 +392,6 @@ html.js .fade-in.appear {
   animation-name: fadeInUp;
 }
 
-/* Menu */
-/* Font sizes */
-/* Colors */
 /* Set background and borders for navbar and set it sticky */
 nav.main-navigation {
   background-color: white;
@@ -721,9 +706,6 @@ label[for=menu-toggle]:hover .line {
   stroke-width: 6;
 }
 
-/* Menu */
-/* Font sizes */
-/* Colors */
 .portal-wrapper {
   color: white;
   display: flex;
@@ -851,9 +833,6 @@ label[for=menu-toggle]:hover .line {
     height: 70vh;
   }
 }
-/* Menu */
-/* Font sizes */
-/* Colors */
 #social-media-menu {
   list-style: none;
   padding-left: 0;
@@ -1040,9 +1019,6 @@ label[for=menu-toggle]:hover .line {
     transform: scale3d(1, 1, 1);
   }
 }
-/* Menu */
-/* Font sizes */
-/* Colors */
 main .entry-header,
 main .page-header {
   max-width: 90rem;
@@ -1139,9 +1115,6 @@ main .page-content .alignwide {
   z-index: 100000;
 }
 
-/* Menu */
-/* Font sizes */
-/* Colors */
 #site-footer {
   background-color: #ecebeb;
   color: #505050;
@@ -1179,9 +1152,6 @@ address p {
   padding-left: 0;
 }
 
-/* Menu */
-/* Font sizes */
-/* Colors */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -1252,6 +1222,18 @@ img {
   transform: scale(0.93);
 }
 
+/*
+Theme Name: Indecsteema
+Author: Markus Uusitalo
+Description:  Wordpress theme for Indecs
+Version: 0.1
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+
+--------------------------------------------------------------*/
 .scroll-margin-top-150 {
   scroll-snap-margin-top: 150px;
   scroll-margin-top: 150px;

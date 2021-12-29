@@ -1,4 +1,4 @@
-@import "variables";
+@use "_variables";
 
 #social-media-menu {
   list-style: none;
@@ -9,7 +9,7 @@
   flex-wrap: wrap;
 
   svg {
-    fill: $footer-font-color;
+    fill: variables.$footer-font-color;
   }
 
   svg:hover {

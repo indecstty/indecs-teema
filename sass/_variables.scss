@@ -1,4 +1,4 @@
-@import "mixins";
+@use "sass:math";
 
 // Block
 $block-padding-width: 4rem;
@@ -11,8 +11,7 @@ $menu-border-height: 0.5rem;
 $menu-logo-margin: 5rem;
 $menu-dropdown-width: 16rem;
 
-$breakpoint: ($content-width + 4 * $menu-height + 4 * $menu-logo-margin) / 1.6;
-
+$breakpoint: math.div(($content-width + 4 * $menu-height + 4 * $menu-logo-margin), 1.6);
 
 /* Font sizes */
 $h1: 4rem;

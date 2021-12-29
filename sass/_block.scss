@@ -1,4 +1,4 @@
-@import "variables";
+@use "_variables";
 
 
 main {
@@ -7,21 +7,21 @@ main {
   // stated here. Couldn't think of a better way to do this.
   .entry-header,
   .page-header {
-    max-width: $content-width;
+    max-width: variables.$content-width;
     margin-left: auto;
     margin-right: auto;
-    padding-left: $block-padding-width;
-    padding-right: $block-padding-width;
+    padding-left: variables.$block-padding-width;
+    padding-right: variables.$block-padding-width;
   }
   .entry-content,
   .page-content {
     > * {
       width: unset;
-      max-width: $content-width;
+      max-width: variables.$content-width;
       margin-left: auto;
       margin-right: auto;
-      padding-left: $block-padding-width;
-      padding-right: $block-padding-width;
+      padding-left: variables.$block-padding-width;
+      padding-right: variables.$block-padding-width;
     }
 
     > ul > li{
@@ -45,11 +45,11 @@ main {
     }
 
     .alignwide {
-      max-width: min(#{$wide-width}, 100%);
+      max-width: min(#{variables.$wide-width}, 100%);
       margin-left: auto;
       margin-right: auto;
-      padding-left: $block-padding-width;
-      padding-right: $block-padding-width;
+      padding-left: variables.$block-padding-width;
+      padding-right: variables.$block-padding-width;
     }
   }
 }
