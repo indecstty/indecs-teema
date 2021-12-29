@@ -1126,7 +1126,6 @@ main .page-content .alignwide {
 
 .footer-inner {
   grid-area: content;
-  padding: 1rem 10rem;
   max-width: 140rem;
 }
 
