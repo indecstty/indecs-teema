@@ -1228,6 +1228,10 @@ img {
   transform: scale(0.93);
 }
 
+*[class*=wp-block-getwid] * {
+  z-index: unset !important;
+}
+
 .scroll-margin-top-150 {
   scroll-snap-margin-top: 150px;
   scroll-margin-top: 150px;

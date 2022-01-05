@@ -1,0 +1,5 @@
+// Fixes blocks from Getwid-plugin
+
+*[class*='wp-block-getwid'] * {
+  z-index: unset !important;
+}
