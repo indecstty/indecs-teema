@@ -99,7 +99,9 @@
 
   .portal-navigation {
     position: static;
-
+    width: 80%;
+    margin: 0 auto;
+    
     ul#portal-menu {
       flex-direction: column;
 
